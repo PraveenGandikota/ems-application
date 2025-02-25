@@ -81,7 +81,7 @@ Open [http://localhost:3000/adminlogin](http://localhost:3000) in your browser.
 ```
 
 ## 📸 Screenshots
-*(Add screenshots here for better visualization)*
+*
 
 ## 🤝 Contributing
 If you would like to contribute, feel free to fork the repository and submit a pull request.
