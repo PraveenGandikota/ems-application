@@ -79,7 +79,7 @@ const Dashboard = () => {
   axios.defaults.withCredentials = true;
   
   const handleLogout = () => {
-    axios.get("http://localhost:5000/auth/logout").then((result) => {
+    axios.get("http://localhost:8080/auth/logout").then((result) => {
       if (result.data.Status) {
         localStorage.removeItem("valid");
         navigate("/adminlogin");

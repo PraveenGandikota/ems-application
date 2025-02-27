@@ -17,7 +17,7 @@ const Home = () => {
 
   const fetchAdminRecords = async () => {
     try {
-      const result = await axios.get('http://localhost:5000/auth/admin_records');
+      const result = await axios.get('http://localhost:8080/auth/admin_records');
       if (result.data.Status) setAdmins(result.data.Result);
     } catch (error) {
       console.error("Error fetching admin records:", error);
@@ -26,7 +26,7 @@ const Home = () => {
 
   const fetchAdminCount = async () => {
     try {
-      const result = await axios.get('http://localhost:5000/auth/admin_count');
+      const result = await axios.get('http://localhost:8080/auth/admin_count');
       if (result.data.Status) setAdminTotal(result.data.Result[0].admin);
     } catch (error) {
       console.error("Error fetching admin count:", error);
@@ -35,7 +35,7 @@ const Home = () => {
 
   const fetchEmployeeCount = async () => {
     try {
-      const result = await axios.get('http://localhost:5000/auth/employee_count');
+      const result = await axios.get('http://localhost:8080/auth/employee_count');
       if (result.data.Status) setEmployeeTotal(result.data.Result[0].employee);
     } catch (error) {
       console.error("Error fetching employee count:", error);
@@ -44,7 +44,7 @@ const Home = () => {
 
   const fetchSalaryTotal = async () => {
     try {
-      const result = await axios.get('http://localhost:5000/auth/salary_count');
+      const result = await axios.get('http://localhost:8080/auth/salary_count');
       if (result.data.Status) setSalaryTotal(result.data.Result[0].salaryOFEmp);
     } catch (error) {
       console.error("Error fetching salary total:", error);

@@ -8,7 +8,7 @@ const Employee = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/auth/employee")
+      .get("http://localhost:8080/auth/employee")
       .then((result) => {
         if (result.data.Status) {
           setEmployee(result.data.Result);
@@ -20,7 +20,7 @@ const Employee = () => {
   }, []);
 
   const handleDelete = (id) => {
-    axios.delete(`http://localhost:5000/auth/delete_employee/${id}`)
+    axios.delete(`http://localhost:8080/auth/delete_employee/${id}`)
       .then(result => {
         if (result.data.Status) {
           setEmployee(prevEmployees => prevEmployees.filter(emp => emp.id !== id)); // Update state instead of reloading

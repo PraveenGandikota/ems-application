@@ -8,7 +8,7 @@ const Profile = () => {
   useEffect(() => {
     const fetchAdminData = async () => {
       try {
-        const result = await axios.get("http://localhost:5000/auth/profile");
+        const result = await axios.get("http://localhost:8080/auth/profile");
         if (result.data.Status) {
           setAdmin(result.data.Result[0]); 
         }
