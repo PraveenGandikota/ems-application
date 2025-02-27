@@ -38,7 +38,7 @@ app.get('/verify', verifyUser, (req, res) => {
     return res.json({ Status: true, role: req.role, id: req.id });
 });
 
-const PORT = process.env.PORT || 8080; 
+const PORT = process.env.PORT || 5000; 
 
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
