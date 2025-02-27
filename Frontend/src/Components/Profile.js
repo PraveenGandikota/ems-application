@@ -10,7 +10,7 @@ const Profile = () => {
       try {
         const result = await axios.get("http://localhost:5000/auth/profile");
         if (result.data.Status) {
-          setAdmin(result.data.Result[0]); // Assuming admin data comes in Result array
+          setAdmin(result.data.Result[0]); 
         }
       } catch (error) {
         console.error("Error fetching admin data:", error);
@@ -18,7 +18,7 @@ const Profile = () => {
     };
 
     fetchAdminData();
-    updateGreeting(); // Update greeting when component mounts
+    updateGreeting(); 
   }, []);
 
   // Function to determine greeting based on time

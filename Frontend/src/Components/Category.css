@@ -47,16 +47,16 @@
   
   /* Scrollable Table */
   .table-responsive {
-    max-height: 400px; /* Adjust to prevent excessive height */
-    overflow-y: auto; /* Only table scrolls, rest stays steady */
-    overflow-x: auto; /* Enables horizontal scrolling for wide tables */
+    max-height: 400px; 
+    overflow-y: auto; 
+    overflow-x: auto; 
     border-radius: 8px;
     border: 1px solid #ddd;
   }
   
   /* Table Head */
   .table thead {
-    background: #0d0d2b; /* Dark Blue */
+    background: #0d0d2b; 
     color: white;
     text-align: center;
     position: sticky;
