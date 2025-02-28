@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
-import './Home.css'; // Import the scoped CSS
+import './Home.css'; 
 
 const Home = () => {
   const [adminTotal, setAdminTotal] = useState(0);

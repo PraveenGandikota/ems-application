@@ -155,11 +155,23 @@ ul li :hover {
     border-radius: 50%;
 }
 
-.raju_ss{
-  font-size: 20px;
-  margin-left: 300px;
-  padding-top: 50px;
-  padding-left: 30px
+
+
+/* For medium and above screens */
+@media (min-width: 768px) {
+  .raju_ss {
+    font-size: 20px;
+    margin-left: 300px;
+    padding-top: 50px;
+    padding-left: 30px;
+  }
+}
+
+/* For screens below medium size */
+@media (max-width: 767px) {
+  .raju_ss {
+    font-size: 20px;
+  }
 }
 
 
