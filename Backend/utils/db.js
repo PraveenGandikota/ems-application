@@ -3,7 +3,7 @@
 // const con = mysql.createConnection({
 //   host: 'localhost',
 //   user: 'root',
-//   password: '@Creta143',
+//   password: '',
 //   database: 'EMS_DATABASE'
 // });
 
